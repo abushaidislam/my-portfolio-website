@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog | Google Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Include the blog JavaScript -->
+    <script src="js/blog.js"></script>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>My Blog</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="article.html">Articles</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <span class="material-icons">search</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Featured Article -->
+                <section class="featured-article">
+                    <div class="article-card featured">
+                        <div class="article-image">
+                            <img src="https://picsum.photos/800/400?random=1" alt="Featured article">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Technology</span>
+                                <span class="date">June 15, 2023</span>
+                            </div>
+                            <h2 class="article-title">The Future of Web Development: Trends to Watch in 2023</h2>
+                            <p class="article-excerpt">Explore the latest trends in web development that are shaping the digital landscape. From progressive web apps to serverless architectures, discover what's next in the world of web development.</p>
+                            <a href="#" class="read-more">Read Full Article</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Articles Grid -->
+                <section class="articles-section" id="articles">
+                    <h2 class="section-title">Latest Articles</h2>
+                    <div class="articles-grid">
+                        <!-- Article 1 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://picsum.photos/400/200?random=2" alt="Article 1">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Design</span>
+                                    <span class="date">June 12, 2023</span>
+                                </div>
+                                <h3 class="article-title">Mastering UI/UX Design Principles</h3>
+                                <p class="article-excerpt">Learn the fundamental principles of effective UI/UX design that can transform your digital products and enhance user satisfaction.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <!-- Article 2 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://picsum.photos/400/200?random=3" alt="Article 2">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Development</span>
+                                    <span class="date">June 10, 2023</span>
+                                </div>
+                                <h3 class="article-title">Building Scalable APIs with Node.js</h3>
+                                <p class="article-excerpt">Discover best practices for creating robust and scalable APIs using Node.js and Express framework.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <!-- Article 3 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://picsum.photos/400/200?random=4" alt="Article 3">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">Security</span>
+                                    <span class="date">June 8, 2023</span>
+                                </div>
+                                <h3 class="article-title">Essential Cybersecurity Practices for 2023</h3>
+                                <p class="article-excerpt">Protect your digital assets with these essential cybersecurity practices that every organization should implement.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <!-- Article 4 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://picsum.photos/400/200?random=5" alt="Article 4">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="category">AI</span>
+                                    <span class="date">June 5, 2023</span>
+                                </div>
+                                <h3 class="article-title">Machine Learning Applications in Everyday Life</h3>
+                                <p class="article-excerpt">Explore how machine learning algorithms are silently improving our daily experiences in unexpected ways.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3 class="widget-title">About</h3>
+                    <p>Welcome to our tech blog where we share insights, tutorials, and news about the latest developments in technology.</p>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Web Development <span>(12)</span></a></li>
+                        <li><a href="#">Mobile Apps <span>(8)</span></a></li>
+                        <li><a href="#">UI/UX Design <span>(5)</span></a></li>
+                        <li><a href="#">Artificial Intelligence <span>(7)</span></a></li>
+                        <li><a href="#">Cybersecurity <span>(4)</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Popular Posts</h3>
+                    <ul class="popular-posts">
+                        <li>
+                            <div class="post-thumb">
+                                <img src="https://picsum.photos/60/60?random=6" alt="Post">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">Getting Started with React Hooks</a></h4>
+                                <span class="date">May 28, 2023</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="post-thumb">
+                                <img src="https://picsum.photos/60/60?random=7" alt="Post">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">CSS Grid vs Flexbox: When to Use Which</a></h4>
+                                <span class="date">May 25, 2023</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="post-thumb">
+                                <img src="https://picsum.photos/60/60?random=8" alt="Post">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">The Rise of Progressive Web Apps</a></h4>
+                                <span class="date">May 20, 2023</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>A simple blog template inspired by Google's design principles. Clean, minimal, and focused on content.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><span class="material-icons">rss_feed</span></a>
+                        <a href="#"><span class="material-icons">email</span></a>
+                        <a href="#"><span class="material-icons">share</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 My Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
