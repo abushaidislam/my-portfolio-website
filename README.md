@@ -53,6 +53,14 @@ This project now includes a complete backend built with Node.js, Express, and Po
 5. Start server: `npm start`
 6. Access the blog at `http://localhost:3000`
 
+### Production Deployment
+1. Clone or download this repository
+2. Run the deployment script:
+   - On Windows: `deploy.bat`
+   - On Linux/Mac: `deploy.sh`
+3. The script will automatically install dependencies, set up the database, and start the server
+4. Access the blog at `http://localhost:3000`
+
 ## Customization
 
 ### Colors

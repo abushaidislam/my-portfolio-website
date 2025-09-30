@@ -11,7 +11,6 @@
 <body>
     <!-- Include the blog JavaScript -->
     <script src="js/blog.js"></script>
-<body>
     <!-- Header Section -->
     <header class="header">
         <div class="container">
@@ -42,89 +41,16 @@
             <div class="content-wrapper">
                 <!-- Featured Article -->
                 <section class="featured-article">
-                    <div class="article-card featured">
-                        <div class="article-image">
-                            <img src="https://picsum.photos/800/400?random=1" alt="Featured article">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category">Technology</span>
-                                <span class="date">June 15, 2023</span>
-                            </div>
-                            <h2 class="article-title">The Future of Web Development: Trends to Watch in 2023</h2>
-                            <p class="article-excerpt">Explore the latest trends in web development that are shaping the digital landscape. From progressive web apps to serverless architectures, discover what's next in the world of web development.</p>
-                            <a href="#" class="read-more">Read Full Article</a>
-                        </div>
+                    <div id="featured-post-container">
+                        <!-- Featured post will be loaded here dynamically -->
                     </div>
                 </section>
 
                 <!-- Articles Grid -->
                 <section class="articles-section" id="articles">
                     <h2 class="section-title">Latest Articles</h2>
-                    <div class="articles-grid">
-                        <!-- Article 1 -->
-                        <article class="article-card">
-                            <div class="article-image">
-                                <img src="https://picsum.photos/400/200?random=2" alt="Article 1">
-                            </div>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="category">Design</span>
-                                    <span class="date">June 12, 2023</span>
-                                </div>
-                                <h3 class="article-title">Mastering UI/UX Design Principles</h3>
-                                <p class="article-excerpt">Learn the fundamental principles of effective UI/UX design that can transform your digital products and enhance user satisfaction.</p>
-                                <a href="#" class="read-more">Read More</a>
-                            </div>
-                        </article>
-
-                        <!-- Article 2 -->
-                        <article class="article-card">
-                            <div class="article-image">
-                                <img src="https://picsum.photos/400/200?random=3" alt="Article 2">
-                            </div>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="category">Development</span>
-                                    <span class="date">June 10, 2023</span>
-                                </div>
-                                <h3 class="article-title">Building Scalable APIs with Node.js</h3>
-                                <p class="article-excerpt">Discover best practices for creating robust and scalable APIs using Node.js and Express framework.</p>
-                                <a href="#" class="read-more">Read More</a>
-                            </div>
-                        </article>
-
-                        <!-- Article 3 -->
-                        <article class="article-card">
-                            <div class="article-image">
-                                <img src="https://picsum.photos/400/200?random=4" alt="Article 3">
-                            </div>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="category">Security</span>
-                                    <span class="date">June 8, 2023</span>
-                                </div>
-                                <h3 class="article-title">Essential Cybersecurity Practices for 2023</h3>
-                                <p class="article-excerpt">Protect your digital assets with these essential cybersecurity practices that every organization should implement.</p>
-                                <a href="#" class="read-more">Read More</a>
-                            </div>
-                        </article>
-
-                        <!-- Article 4 -->
-                        <article class="article-card">
-                            <div class="article-image">
-                                <img src="https://picsum.photos/400/200?random=5" alt="Article 4">
-                            </div>
-                            <div class="article-content">
-                                <div class="article-meta">
-                                    <span class="category">AI</span>
-                                    <span class="date">June 5, 2023</span>
-                                </div>
-                                <h3 class="article-title">Machine Learning Applications in Everyday Life</h3>
-                                <p class="article-excerpt">Explore how machine learning algorithms are silently improving our daily experiences in unexpected ways.</p>
-                                <a href="#" class="read-more">Read More</a>
-                            </div>
-                        </article>
+                    <div class="articles-grid" id="blog-posts-container">
+                        <!-- Blog posts will be loaded here dynamically -->
                     </div>
                 </section>
             </div>

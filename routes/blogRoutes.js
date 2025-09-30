@@ -48,23 +48,43 @@ router.get('/categories', async (req, res) => {
 // POST /api/blog/posts - Create a new blog post
 router.post('/posts', async (req, res) => {
   try {
+    // Validate required fields
+    const { title, content, category, author } = req.body;
+    if (!title || !content || !category || !author) {
+      return res.status(400).json({ error: 'Title, content, category, and author are required' });
+    }
+    
     const post = await BlogPost.create(req.body);
     res.status(201).json(post);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    if (error.message.includes('required') || error.message.includes('must be less than')) {
+      res.status(400).json({ error: error.message });
+    } else {
+      res.status(500).json({ error: error.message });
+    }
   }
 });
 
 // PUT /api/blog/posts/:id - Update a blog post
 router.put('/posts/:id', async (req, res) => {
   try {
+    // Validate required fields
+    const { title, content, category } = req.body;
+    if (!title || !content || !category) {
+      return res.status(400).json({ error: 'Title, content, and category are required' });
+    }
+    
     const post = await BlogPost.update(req.params.id, req.body);
     if (!post) {
       return res.status(404).json({ error: 'Post not found' });
     }
     res.json(post);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    if (error.message.includes('required') || error.message.includes('must be less than')) {
+      res.status(400).json({ error: error.message });
+    } else {
+      res.status(500).json({ error: error.message });
+    }
   }
 });
 

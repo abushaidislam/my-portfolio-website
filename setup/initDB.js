@@ -20,7 +20,12 @@ const insertSampleData = `
   ('Mastering UI/UX Design Principles', 'Learn the fundamental principles of effective UI/UX design that can transform your digital products and enhance user satisfaction.', 'Design', 'Jane Smith', NOW(), NOW()),
   ('Building Scalable APIs with Node.js', 'Discover best practices for creating robust and scalable APIs using Node.js and Express framework.', 'Development', 'Mike Johnson', NOW(), NOW()),
   ('Essential Cybersecurity Practices for 2023', 'Protect your digital assets with these essential cybersecurity practices that every organization should implement.', 'Security', 'Sarah Williams', NOW(), NOW()),
-  ('Machine Learning Applications in Everyday Life', 'Explore how machine learning algorithms are silently improving our daily experiences in unexpected ways.', 'AI', 'David Brown', NOW(), NOW())
+  ('Machine Learning Applications in Everyday Life', 'Explore how machine learning algorithms are silently improving our daily experiences in unexpected ways.', 'AI', 'David Brown', NOW(), NOW()),
+  ('Getting Started with React Hooks', 'Learn how to use React Hooks to simplify your functional components and manage state more effectively.', 'Development', 'Alice Johnson', NOW(), NOW()),
+  ('CSS Grid vs Flexbox: When to Use Which', 'Understanding the differences between CSS Grid and Flexbox and when to use each layout method for optimal results.', 'Design', 'Bob Smith', NOW(), NOW()),
+  ('The Rise of Progressive Web Apps', 'Explore how Progressive Web Apps are bridging the gap between web and mobile applications.', 'Technology', 'Carol Davis', NOW(), NOW()),
+  ('Introduction to Docker for Developers', 'Learn the basics of containerization with Docker and how it can improve your development workflow.', 'Development', 'David Wilson', NOW(), NOW()),
+  ('Best Practices for Responsive Design', 'Discover the essential techniques for creating websites that look great on all devices.', 'Design', 'Eva Martinez', NOW(), NOW())
   ON CONFLICT DO NOTHING;
 `;
 
